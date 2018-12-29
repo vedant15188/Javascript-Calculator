@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FCC Javascript Calculator</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="nested">
+            <div id="display">0</div>
+            <div id="ui">
+                <div class="grid1" style="background: white;">
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="clear" class="item1" style="grid-column: 1/3;">AC</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="divide" class="item2">/</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="seven" class="item3">7</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="eight" class="item4">8</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="nine" class="item5">9</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="four" class="item6">4</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="five" class="item7">5</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="six" class="item8">6</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="one" class="item9">1</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="two" class="item10">2</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="three" class="item11">3</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="zero" class="item12" style="grid-column: 1/3;">0</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="decimal" class="item13">.</div>
+                </div>
+                <div class="grid2" style="background: white;">
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="add" class="item14">+</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="subtract" class="item15">-</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="multiply" class="item16">*</div>
+
+                    <div onmousedown="changebg(this.id, 0)" onmouseup="changebg(this.id, 1)" onclick="handle(this.id)"
+                        id="equals" class="item17">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

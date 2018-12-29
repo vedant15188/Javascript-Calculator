@@ -1,0 +1,68 @@
+.wrapper {
+    display: grid;
+    grid-auto-rows: minmax(80vh, auto);
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 1em;
+}
+
+.nested {
+    padding: 1em;
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr;
+    margin-top: 12vh;
+    grid-column: 2;
+    background: #ddd;
+}
+
+#display {
+    background: white;
+    padding: 1em;
+}
+
+#ui {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid1>div,
+.grid2>div {
+    font-weight: bold;
+    font-size: 2em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    border: 1px solid #000000;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr) 2fr;
+}
+
+div[class^="item"] {
+    background-color: #eee;
+}
+
+.item1 {
+    background-color: #ff000085 !important;
+}
+
+.item17 {
+    background-color: #958affd1 !important;
+}
+
+#display {
+    display: grid;
+    justify-items: end;
+    align-items: flex-end;
+    font-size: 2em;
+}
